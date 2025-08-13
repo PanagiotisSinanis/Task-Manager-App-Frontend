@@ -1,4 +1,4 @@
-Code Changes Overview
+                                                                                                        Code Changes Overview
 This branch implements major changes in the QuickEntryBar and TaskList components to improve time-tracking functions and the overall user experience.
 
 1. QuickEntryBar Component
