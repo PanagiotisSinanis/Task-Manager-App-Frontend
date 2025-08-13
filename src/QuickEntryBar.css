@@ -1,0 +1,39 @@
+.quick-entry-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.quick-entry-bar input[type="text"],
+.quick-entry-bar select,
+.quick-entry-bar input[type="time"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quick-entry-bar button {
+  background: #1890ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quick-entry-bar button:hover {
+  background: #1677cc;
+}
