@@ -1,5 +1,3 @@
-Σας ζητώ συγγνώμη για την παρεξήγηση. Διορθώνω το κείμενο, αφαιρώντας την υπογράμμιση και χρησιμοποιώντας σωστή μορφοποίηση markdown για ένα αρχείο README.
-
 Code Changes Overview
 This branch implements major changes in the QuickEntryBar and TaskList components to improve time-tracking functions and the overall user experience.
 
