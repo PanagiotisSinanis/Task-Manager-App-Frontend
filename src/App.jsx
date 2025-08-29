@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate,useParams  } from 'react-router-dom';
 import axios from 'axios';
-import './LoginPage.css';
-import './TaskList.css';
-import './NewTask.css';
+import './styles/LoginPage.css';
+import './components/TaskList.css';
+import './styles/NewTask.css';
 import logo from './assets/apollo_gs_logo.jfif';
-import NewProject from './NewProject';
-import MyProjects from './MyProjects';
-import ProjectDetails from './ProjectDetails'; 
-import ProjectList from './ProjectList';
-import './UserDashboard.css';
-import CreateTask from './CreateTask';
-import PrivateRoute from './PrivateRoute';
-import GuestRoute from './GuestRoute';
-import AdminLayout from './AdminLayout';
+import NewProject from './pages/NewProject';
+import MyProjects from './pages/MyProjects';
+import ProjectDetails from './components/ProjectDetails'; 
+import './styles/UserDashboard.css';
+import PrivateRoute from './components/PrivateRoute';
+import GuestRoute from './components/GuestRoute';
+import AdminLayout from './pages/AdminLayout';
 import 'antd/dist/reset.css';
-import ProtectedRoute from './ProtectedRoute';
-import UserLayout from './UserLayout';
-import RecentEntries from './RecentEntries';
+import UserLayout from './pages/UserLayout';
+
 
 
 

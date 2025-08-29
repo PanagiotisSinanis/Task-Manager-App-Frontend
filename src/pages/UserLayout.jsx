@@ -8,8 +8,8 @@ import {
 } from '@ant-design/icons';
 import { Outlet, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import QuickEntryBar from './QuickEntryBar';
-import TaskList from './TaskList';
+import QuickEntryBar from '../components/QuickEntryBar';
+import TaskList from '../components/TaskList';
 
 const { Header, Content, Sider } = Layout;
 

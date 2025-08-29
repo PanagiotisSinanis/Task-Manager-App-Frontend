@@ -9,8 +9,8 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-import CreateTask from './CreateTask';
-import TimeTracker from './TimeTracker';
+import CreateTask from '../components/CreateTask';
+import TimeTracker from '../components/TimeTracker';
 import './MyProjects.css';
 
 const { Header, Content, Sider } = Layout;
