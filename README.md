@@ -1,26 +1,93 @@
-                                                                                                        Code Changes Overview
-This branch implements major changes in the QuickEntryBar and TaskList components to improve time-tracking functions and the overall user experience.
+<p align="center"> <img src="https://vitejs.dev/logo.svg" width="150" alt="Vite Logo"> <h1>Task Manager App Frontend</h1> </p> <p align="center"> <a href="https://github.com/PanagiotisSinanis/Task-Manager-App-Frontend/actions"> <img src="https://img.shields.io/github/actions/workflow/status/PanagiotisSinanis/Task-Manager-App-Frontend/main.yml?label=Build&logo=github&color=blue" alt="Build Status"> </a> <a href="https://github.com/PanagiotisSinanis/Task-Manager-App-Frontend/issues"> <img src="https://img.shields.io/github/issues/PanagiotisSinanis/Task-Manager-App-Frontend?logo=github&color=orange" alt="Issues"> </a> <a href="https://github.com/PanagiotisSinanis/Task-Manager-App-Frontend/blob/main/LICENSE"> <img src="https://img.shields.io/github/license/PanagiotisSinanis/Task-Manager-App-Frontend?color=green" alt="License"> </a> <a href="https://vitejs.dev/"> <img src="https://img.shields.io/badge/Vite-FF0050?logo=vite&logoColor=white" alt="Vite"> </a> <a href="https://reactjs.org/"> <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React"> </a> </p>
+✨ Περιγραφή
 
-1. QuickEntryBar Component
-The QuickEntryBar code has been upgraded with the following enhancements:
+Το Task Manager Frontend είναι μια σύγχρονη εφαρμογή που χτίστηκε με React + Vite και παρέχει ένα δυναμικό UI για τη διαχείριση εργασιών. Επικοινωνεί με το αντίστοιχο backend API και προσφέρει:
 
-Quick Entry Mode: An entry field labeled “What are you working on?” has been added. Users can now enter a description and, if no specific task is selected, the timer can be started. In this scenario, the “Start” button is replaced with a “Create & Start” button, which performs two functions: it creates a new task with the provided description and starts time tracking.
+Άμεση δημιουργία και παρακολούθηση εργασιών
 
-Local Storage Persistence: The project, task, and description fields are now saved in localStorage. This improves the user experience by retrieving the user’s state even after a page refresh.
+Live time tracking για κάθε task
 
-onStopped Callback: A new prop called onStopped has been added to support integration with the parent component. This prop can be used to stop the timer, which, in turn, notifies the parent component and all other components on which this timer depends.
+Quick Entry Mode για γρήγορη καταγραφή εργασίας
 
-UI Improvements: The overall styling of the component is more modern, with a white background, rounded borders, and shadows.
+Φίλτρα και δυναμικές λίστες εργασιών
 
-2. TaskList Component
-The TaskList component has been updated with new features:
+Σύγχρονο UI με Ant Design components
 
-Dynamic Refresh: Changes to the QuickEntryBar will now refresh the time entries list. For instance, after stopping a task, TaskList can invoke onRefresh to fetch the latest data.
+🚀 Χαρακτηριστικά
+<div align="left">
 
-Live Duration Tracking: The timer for an active entry has been enhanced. It now draws upon current_start_time to compute the duration in real time, adding it to the initial duration (if present), ensuring an accurate total time representation.
+📝 Διαχείριση Εργασιών: Δημιουργία, επεξεργασία, διαγραφή εργασιών
 
-New Button Actions: “Delete” (with a DeleteOutlined icon) and “Restart” (with a PlayCircleOutlined icon) buttons have been added. These buttons will make backend calls to delete or restart a time entry.
+⏱ Time Tracking: Παρακολούθηση χρόνου για κάθε task
 
-Task Filtering: The visual cleanliness of the list is improved by filtering out entries with status: “auto” and title: “Add description”.
+⚡ Quick Entry Mode: Καταχώριση εργασιών με ένα click
 
-UI Upgrade: Ant Design components (Card, Flex, Row, Col, Tag, Tooltip) have been used to modernize the list’s visual refresh, organization, and aesthetics.
+🎨 Σύγχρονο UI: Χρήση Ant Design components
+
+🔄 Dynamic Lists: Φίλτρα, Delete/Restart buttons
+
+🌐 API Integration: Συνεργασία με Task Manager Backend
+
+</div>
+🛠️ Τεχνολογίες
+<div align="left">
+
+💻 React 18+
+
+⚡ Vite
+
+🎨 Ant Design
+
+🌐 Axios για HTTP requests
+
+🖌 CSS & HTML
+
+</div>
+📦 Εγκατάσταση
+<div align="left">
+
+Κλωνοποιήστε το αποθετήριο:
+
+git clone https://github.com/PanagiotisSinanis/Task-Manager-App-Frontend.git
+cd Task-Manager-App-Frontend
+
+
+Εγκαταστήστε τις εξαρτήσεις:
+
+npm install
+
+
+Ρυθμίστε τις μεταβλητές περιβάλλοντος στο .env (π.χ. URL backend API)
+
+Ξεκινήστε τον development server:
+
+npm run dev
+
+
+Η εφαρμογή θα είναι διαθέσιμη στη διεύθυνση που εμφανίζεται στο terminal (συνήθως http://localhost:5173
+).
+
+</div>
+🧪 Δοκιμές
+<div align="left">
+
+Εκτέλεση tests (αν υπάρχουν):
+
+npm run test
+
+</div>
+📌 Σημειώσεις
+<div align="left">
+
+Το frontend επικοινωνεί με το backend API για όλες τις λειτουργίες εργασιών και χρηστών.
+
+Το έργο είναι υπό ανάπτυξη και μπορεί να υπάρξουν αλλαγές στο UI ή στις λειτουργίες.
+
+</div>
+📄 Άδεια Χρήσης
+<div align="left">
+
+Αυτό το έργο διατίθεται υπό MIT License. Δείτε το LICENSE
+ για περισσότερες πληροφορίες.
+
+</div>
